@@ -1,11 +1,7 @@
 try:
-    print("Enter Interger")
-    number=int(input())
-    print("Enter string")
-    word=input()
-    print("Enter char")
-    character=input()
+    print("Enter value")
+    interger,strings,character=input().split() 
+    print(interger,"\n",strings,"\n",character)
 except:
-    print("Incorrect type.try again!")
-    
-print(number,"\n",word,"\n",character)
+    if type(interger) is not int:
+        print("Incorrect type.try again!")   
